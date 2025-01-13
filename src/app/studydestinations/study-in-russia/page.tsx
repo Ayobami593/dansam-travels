@@ -1,9 +1,14 @@
 "use client";
 
 import React from "react";
+import Layout from "@/components/Layout";
 
 const StudyInRussia = () => {
-  return <div>page</div>;
+  return (
+    <Layout>
+      <div>page</div>
+    </Layout>
+  );
 };
 
 export default StudyInRussia;
