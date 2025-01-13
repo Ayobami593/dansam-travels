@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.ant-menu .ant-menu-sub {
+  position: relative;
+  top: 2.2rem;
+  left: 15rem;
+}

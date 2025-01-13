@@ -10,6 +10,7 @@
     "deploy": "vite build && cd ./dist && mv index.html 200.html && surge ./ http://dansam-travels.surge.sh"
   },
   "dependencies": {
+    "antd": "^5.23.1",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -18,8 +19,8 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "postcss": "^8",

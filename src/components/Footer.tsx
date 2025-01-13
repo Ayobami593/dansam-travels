@@ -1,13 +1,12 @@
 import { currentYear } from "@/utils";
 import React from "react";
 
-const Footer = () => {
+const CustomFooter = () => {
   return (
     <footer className="">
-      <div className="grid-cols-2 gap-7 grid md:grid-cols-6"></div>
       <div className="text-center">
         <p>
-          {currentYear} Dansam Travels and Educonsult &#169; All Rights
+          Dansam Travels and Educonsult &#169; {currentYear} || All Rights
           Reserved.
         </p>
       </div>
@@ -15,4 +14,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default CustomFooter;
