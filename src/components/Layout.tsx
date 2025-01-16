@@ -1,8 +1,11 @@
+"use client";
+
 import React, { ReactNode, useState } from "react";
 import { Layout, Menu, theme, Drawer, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import CustomFooter from "./Footer";
+import { RiWhatsappFill } from "react-icons/ri";
 
 const { Header, Content, Footer } = Layout;
 
@@ -52,58 +55,61 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <Layout>
-      <Header
-        className="sticky top-0 z-10 w-full flex items-center"
-        style={{ backgroundColor: color }}
-      >
-        <div className="flex justify-between items-center w-full">
-          <Link href="/">
-            <div className="text-white font-bold cursor-pointer">
-              Dansam Travels and Educonsult
-            </div>
-          </Link>
-          <Button
-            className="md:hidden text- bg-none"
-            icon={<MenuOutlined />}
-            onClick={() => setDrawerVisible(true)}
-          />
+      <div className="flex flex-col min-h-screen">
+        <Header
+          className="sticky top-0 z-10 w-full flex items-center"
+          style={{ backgroundColor: color }}
+        >
+          <div className="flex justify-between items-center w-full">
+            <Link href="/">
+              <div className="text-white font-bold cursor-pointer">
+                Dansam Travels and Educonsult
+              </div>
+            </Link>
+            <Button
+              className="md:hidden text- bg-none"
+              icon={<MenuOutlined />}
+              onClick={() => setDrawerVisible(true)}
+            />
+            <Menu
+              theme="light"
+              mode="horizontal"
+              style={{ backgroundColor: color }}
+              defaultSelectedKeys={["1"]}
+              items={items}
+              className="hidden md:flex flex-1 justify-end"
+            />
+          </div>
+        </Header>
+        <Drawer
+          placement="right"
+          closable
+          onClose={() => setDrawerVisible(false)}
+          open={drawerVisible}
+          className="md:hidden"
+          width={300}
+        >
           <Menu
-            theme="light"
-            mode="horizontal"
-            style={{ backgroundColor: color }}
+            mode="vertical"
             defaultSelectedKeys={["1"]}
             items={items}
-            className="hidden md:flex flex-1 justify-end"
+            onClick={() => setDrawerVisible(false)}
           />
-        </div>
-      </Header>
-      <Drawer
-        placement="right"
-        closable
-        onClose={() => setDrawerVisible(false)}
-        open={drawerVisible}
-        className="md:hidden"
-        width={300}
-      >
-        <Menu
-          mode="vertical"
-          defaultSelectedKeys={["1"]}
-          items={items}
-          onClick={() => setDrawerVisible(false)}
-        />
-      </Drawer>
+        </Drawer>
 
-      <Content className="px-6 md:px-12 my-6">
-        <div
-          className="p-6 min-h-screen"
-          style={{ background: "", borderRadius: "" }}
-        >
+        <Content className="px-4 md:px-12 my-2 md:my-6 flex-1">
           {children}
-        </div>
-      </Content>
-      <Footer className="">
-        <CustomFooter />
-      </Footer>
+        </Content>
+        <a href="">
+          <RiWhatsappFill
+            size={40}
+            className="text-green-500 fixed bottom-40 right-1"
+          />
+        </a>
+        <Footer className="">
+          <CustomFooter />
+        </Footer>
+      </div>
     </Layout>
   );
 };
