@@ -1,7 +1,15 @@
-import React from "react";
+import Layout from "@/components/Layout";
 
 const Aboutus = () => {
-  return <div>page</div>;
+  return (
+    <Layout>
+      <div>
+        <p>
+          <strong>Dansam Travels</strong> is a dedicated
+        </p>
+      </div>
+    </Layout>
+  );
 };
 
 export default Aboutus;

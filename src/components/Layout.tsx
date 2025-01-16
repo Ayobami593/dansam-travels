@@ -10,7 +10,14 @@ import { RiWhatsappFill } from "react-icons/ri";
 const { Header, Content, Footer } = Layout;
 
 const items = [
-  { key: "1", label: <Link href="/">Home</Link> },
+  {
+    key: "1",
+    label: (
+      <Link href="/" className="text-white">
+        Home
+      </Link>
+    ),
+  },
   {
     key: "2",
     label: "Services",
@@ -74,8 +81,8 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
             <Menu
               theme="light"
               mode="horizontal"
-              style={{ backgroundColor: color }}
-              defaultSelectedKeys={["1"]}
+              style={{ backgroundColor: color, color: "white" }}
+              // defaultSelectedKeys={["1"]}
               items={items}
               className="hidden md:flex flex-1 justify-end"
             />
