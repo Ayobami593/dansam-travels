@@ -3,7 +3,7 @@ import React from "react";
 
 const CustomFooter = () => {
   return (
-    <footer className="">
+    <footer className="text-white font-suse">
       <div className="flex flex-wrap md:flex-row md:justify-between justify-center  gap-4">
         <div>
           <p>Dansam travels & Educonsult consult</p>

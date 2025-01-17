@@ -9,6 +9,7 @@ export default {
   theme: {
     fontFamily: {
       mulish: ["Mulish", "sans-serif"],
+      suse: ["SUSE", "sans-serif"],
     },
     extend: {
       colors: {

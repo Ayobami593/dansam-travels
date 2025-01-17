@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode, useState } from "react";
-import { Layout, Menu, theme, Drawer, Button } from "antd";
+import { Layout, Menu, Drawer, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import CustomFooter from "./Footer";
@@ -13,7 +13,7 @@ const items = [
   {
     key: "1",
     label: (
-      <Link href="/" className="text-white">
+      <Link href="/" className="">
         Home
       </Link>
     ),
@@ -58,8 +58,8 @@ const items = [
 
 const AppLayout = ({ children }: { children: ReactNode }) => {
   const [drawerVisible, setDrawerVisible] = useState(false);
-  const color = "#429a98";
-
+  const color = "#235e5e";
+  const menuTextColor = "white";
   return (
     <Layout>
       <div className="flex flex-col min-h-screen">
@@ -81,10 +81,13 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
             <Menu
               theme="light"
               mode="horizontal"
-              style={{ backgroundColor: color, color: "white" }}
-              // defaultSelectedKeys={["1"]}
+              style={{
+                backgroundColor: color,
+                color: menuTextColor,
+                fontSize: "1rem",
+              }}
               items={items}
-              className="hidden md:flex flex-1 justify-end"
+              className="hidden md:flex flex-1 justify-end text-white"
             />
           </div>
         </Header>
@@ -104,16 +107,19 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
           />
         </Drawer>
 
-        <Content className="px-4 md:px-12 my-2 md:my-6 flex-1">
+        <Content className="px-4 md:px-12 my-2 md:my-4 flex-1">
           {children}
         </Content>
-        <a href="">
+        <a
+          href="https://wa.me/+79950833328?text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
+          target="_blank"
+        >
           <RiWhatsappFill
             size={40}
             className="text-green-500 fixed bottom-40 right-1"
           />
         </a>
-        <Footer className="">
+        <Footer className="" style={{ backgroundColor: color }}>
           <CustomFooter />
         </Footer>
       </div>
