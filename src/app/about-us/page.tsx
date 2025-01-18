@@ -49,9 +49,11 @@ const Aboutus = () => {
           <p className="text-center font-bold font-mulish text-xl md:text-3xl">
             About the Founder/CEO
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="text-justify">
-              <p>Personal Profile</p>{" "}
+              <p className="font-bold font-mulish text-lg md:text-2xl">
+                Personal Profile
+              </p>{" "}
               <p>
                 Ayobami Samuel is a transformative leader, seamlessly merging
                 the worlds of travel and education to foster global
@@ -75,7 +77,9 @@ const Aboutus = () => {
               </p>
             </div>
             <div className="text-justify">
-              <p>Early Life</p>
+              <p className="font-bold font-mulish text-lg md:text-2xl">
+                Early Life
+              </p>
               <p>
                 Ayobami Samuel, born in Ibadan, Oyo State, Nigeria, to Nigerian
                 parents, is the second child in a family of four. He attended
