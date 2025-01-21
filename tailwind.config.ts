@@ -12,9 +12,8 @@ export default {
       suse: ["SUSE", "sans-serif"],
     },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        about: "url('/studyAbroad.png')",
       },
     },
   },

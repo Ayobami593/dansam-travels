@@ -1,16 +1,10 @@
 import Layout from "@/components/Layout";
+import Image from "next/image";
 
 const Aboutus = () => {
   return (
     <Layout>
       <div className="font-suse md:text-lg text-base space-y-4">
-        <div className="relative h-64 bg-cover bg-center">
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 className="text-white text-3xl md:text-5xl font-bold">
-              About Us
-            </h1>
-          </div>
-        </div>
         <p className="text-center test-sm md:text-base">
           <strong>Dansam Travels</strong> is a dedicated educational travel
           agency based in Nigeria, specializing in facilitating access to
@@ -24,32 +18,28 @@ const Aboutus = () => {
           environment.
         </p>
         <div className="flex items- flex-col md:flex-row gap-4 h-full">
-          <div className="text-center shadow-md bg-white rounded-md flex-1 p-4 h-full">
-            <p className="font-bold font-mulish text-lg md:text-2xl">
-              Our Mission
+          <div className="space-y-1">
+            <p className="test-base md:text-lg">
+              <strong>Our Mission</strong> is to empower students and
+              individuals to achieve their academic aspirations by providing
+              reliable and comprehensive educational travel services to Russia,
+              Belarus, and China.
             </p>
             <p className="test-base md:text-lg">
-              To empower students and individuals to achieve their academic
-              aspirations by providing reliable and comprehensive educational
-              travel services to Russia, Belarus, and China.
-            </p>
-          </div>
-          <div className="text-center shadow-md bg-white rounded-md flex-1 p-4 min-h-full">
-            <p className="font-bold font-mulish text-lg md:text-2xl">
-              Our Vision
-            </p>
-            <p className="test-base md:text-lg">
-              To be the leading educational travel agency in Nigeria, recognized
-              for our expertise, personalized service, and commitment to student
-              success
+              <strong>Our vision</strong> is to be the leading educational
+              travel agency in Nigeria, recognized for our expertise,
+              personalized service, and commitment to student success
             </p>
           </div>
         </div>
-        <div>
-          <p className="text-center font-bold font-mulish text-xl md:text-3xl">
-            About the Founder/CEO
-          </p>
-          <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="md:w-[30%] flex md:items-center">
+            <Image src="/expandhorizon.png" alt="" width={450} height={450} />
+          </div>
+          <div className="md:w-[70%]">
+            <p className="text-center font-bold font-mulish text-xl md:text-3xl">
+              About the Founder/CEO
+            </p>
             <div className="text-justify">
               <p className="font-bold font-mulish text-lg md:text-2xl">
                 Personal Profile
