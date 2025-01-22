@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { CgMailOpen } from "react-icons/cg";
 import { email, faqs, phoneNumber } from "@/utils";
 import FaqComponent from "@/components/Faqs";
