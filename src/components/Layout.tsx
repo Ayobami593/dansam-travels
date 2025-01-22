@@ -111,7 +111,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
           {children}
         </Content>
         <a
-          href="https://wa.me/+79950833328?text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
+          href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
           target="_blank"
         >
           <RiWhatsappFill

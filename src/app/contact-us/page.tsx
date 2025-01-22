@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import { CgMailOpen } from "react-icons/cg";
-import { email, phoneNumber } from "@/utils";
+import { email, faqs, phoneNumber } from "@/utils";
+import FaqComponent from "@/components/Faqs";
 
 const Contactus = () => {
   return (
@@ -23,7 +24,7 @@ const Contactus = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 font-semibold text-xl text-center md:text-6xl space-y-6">
+        <div className="flex-1 font- text-xl text-center md:text-4xl space-y-6">
           <p>No matter where you are, we would always be here for you!</p>
           <p className="border-b border-black pb-4 mx-8">
             Have questions or enquiries ?
@@ -50,6 +51,7 @@ const Contactus = () => {
           </div>
         </div>
       </div>
+      <FaqComponent faqs={faqs} />
     </Layout>
   );
 };

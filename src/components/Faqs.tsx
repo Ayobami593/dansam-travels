@@ -1,5 +1,8 @@
+"use client";
+
 import { Faqs } from "@/utils";
 import { useState } from "react";
+import { IoMdArrowDropright, IoMdArrowDropup } from "react-icons/io";
 
 interface FaqItems {
   question: string;
@@ -8,20 +11,24 @@ interface FaqItems {
   onToggle: () => void;
 }
 
+interface FaqComponentProps {
+  faqs: Faqs[];
+}
+
 const FaqItem = ({ question, answer, isOpen, onToggle }: FaqItems) => (
-  <div className="faq border-b border-gray-300">
+  <div className="faq border-b border-gray-100">
     <div
-      className="faq-title cursor-pointer p-4 bg-blue-600 text-white flex justify-between items-center"
+      className="faq-title cursor-pointer p-4 bg-[#389494] text-white flex gap-2 items-center"
       onClick={onToggle}
     >
+      <span>{isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropright />}</span>{" "}
       <span>{question}</span>
-      <span>{isOpen ? "-" : "+"}</span>
     </div>
     {isOpen && <div className="faq-content p-4 bg-gray-100">{answer}</div>}
   </div>
 );
 
-const FaqComponent = ({ faqs }) => {
+const FaqComponent = ({ faqs }: FaqComponentProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number | null) => {
@@ -29,7 +36,10 @@ const FaqComponent = ({ faqs }) => {
   };
 
   return (
-    <div className="faq-container max-w-2xl mx-auto bg-white shadow-md rounded">
+    <div className="w-full">
+      <h1 className="text-center mb-3 font-semibold text-lg md:text-3xl">
+        Frequently Asked Questions(FAQs)
+      </h1>
       {faqs.map((faq, index: number) => (
         <FaqItem
           key={index}
