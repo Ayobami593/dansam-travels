@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import Layout from "@/components/Layout";
+import AppLayout from "@/components/Layout";
 
 const StudyInRussia = () => {
   return (
-    <Layout>
+    <AppLayout>
       <div>page</div>
-    </Layout>
+    </AppLayout>
   );
 };
 

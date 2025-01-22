@@ -1,9 +1,9 @@
-import Layout from "@/components/Layout";
+import AppLayout from "@/components/Layout";
 import Image from "next/image";
 
 const Aboutus = () => {
   return (
-    <Layout>
+    <AppLayout>
       <div className="font-suse md:text-lg text-base space-y-4">
         <p className="text-center test-sm md:text-base">
           <strong>Dansam Travels</strong> is a dedicated educational travel
@@ -85,7 +85,7 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "vite build && cd ./dist && mv index.html 200.html && surge ./ http://dansam-travels.surge.sh"
+    "deploy": "vite build && cd ./dist && mv index.html 200.html && surge ./ https://dansam-travels.surge.sh"
   },
   "dependencies": {
     "antd": "^5.23.1",

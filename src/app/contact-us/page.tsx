@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "@/components/Layout";
 import Image from "next/image";
 import { CgMailOpen } from "react-icons/cg";
 import { email, faqs, phoneNumber } from "@/utils";
 import FaqComponent from "@/components/Faqs";
+import AppLayout from "@/components/Layout";
 
 const Contactus = () => {
   return (
-    <Layout>
+    <AppLayout>
       <div className="flex flex-col py-4 md:py-12 md:flex-row gap-4 md:gap-8">
         <div className="flex-1 space-y-3">
           <img src="/studyAbroad.png" alt="" className="h-[21rem] w-full" />
@@ -52,7 +52,7 @@ const Contactus = () => {
         </div>
       </div>
       <FaqComponent faqs={faqs} />
-    </Layout>
+    </AppLayout>
   );
 };
 

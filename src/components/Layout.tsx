@@ -69,13 +69,13 @@ const items = [
 const AppLayout = ({ children }: { children: ReactNode }) => {
   const [drawerVisible, setDrawerVisible] = useState(false);
   const color = "#235e5e";
-  const menuTextColor = "white";
+  const menuTextColor = "#ffffff";
   return (
     <Layout>
       <div className="flex flex-col min-h-screen">
         <Header
           className="sticky top-0 z-10 w-full flex items-center"
-          style={{ backgroundColor: color }}
+          style={{ backgroundColor: color, color: menuTextColor }}
         >
           <div className="flex justify-between items-center w-full">
             <Link href="/">
@@ -93,8 +93,8 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
               mode="horizontal"
               style={{
                 backgroundColor: color,
-                color: menuTextColor,
                 fontSize: "1rem",
+                borderBottom: "none",
               }}
               items={items}
               className="hidden md:flex flex-1 justify-end text-white"
