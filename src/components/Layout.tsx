@@ -22,8 +22,18 @@ const items = [
     key: "2",
     label: "Services",
     children: [
-      { key: "2-1", label: <Link href="/services/visa">Visa Services</Link> },
-      { key: "2-2", label: <Link href="/services/hotel">Hotel Services</Link> },
+      {
+        key: "2-1",
+        label: <Link href="/services/visa-assistance">Visa Assistance</Link>,
+      },
+      {
+        key: "2-2",
+        label: <Link href="/services/approved-visas">Approved Visa</Link>,
+      },
+      {
+        key: "2-3",
+        label: <Link href="/services/flight-booking">Flight Booking</Link>,
+      },
     ],
   },
   { key: "3", label: <Link href="/contact-us">Contact Us</Link> },
