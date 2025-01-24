@@ -7,7 +7,7 @@ const StudyInRussia = () => {
   return (
     <AppLayout>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
-        <div>
+        <div className="">
           <p>Study in Russia</p>
           <div className="space-y-4">
             <p>
@@ -39,10 +39,11 @@ const StudyInRussia = () => {
               with preparing for your studies in Russia.
             </p>
           </div>
+          <ul className="list-decimal"></ul>
         </div>
         <div className="space-y-6">
-          <img src="/russia1.png" alt="" className="size-" />
-          <img src="/russiatwo.png" alt="" />
+          <img src="/russia1.png" alt="" className="size- rounded-md" />
+          <img src="/russiatwo.png" alt="" className="size- rounded-md" />
         </div>
       </div>
     </AppLayout>
