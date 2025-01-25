@@ -68,7 +68,7 @@ const StudyInBelarus = () => {
             </p>
             <div className="space-y-2">
               <p>Admission Requirements</p>
-              <ul className="list-decimal px-10">
+              <ul className="list-decimal px-10 text-justify">
                 <li>You must be at least 17 years old.</li>
                 <li>
                   You need to have a minimum of 5 credits in relevant subjects
@@ -88,7 +88,7 @@ const StudyInBelarus = () => {
             </div>
             <div className="space-y-2">
               <p className="uppercase">Documents required</p>
-              <ul className="list-decimal px-10">
+              <ul className="list-decimal px-10 text-justify">
                 <li>
                   A valid international passport with at least 2 years'
                   validity.
@@ -97,15 +97,26 @@ const StudyInBelarus = () => {
                 <li>
                   Certified copies of your O'Level results (WAEC or NECO).
                 </li>
-                <li></li>
-                <li></li>
+                <li>
+                  If you're applying for a postgraduate program, you'll need to
+                  provide your undergraduate transcript.
+                </li>
+                <li>
+                  Diploma or Degree Certificate: If you're applying for a
+                  postgraduate program, you'll need to provide your
+                  undergraduate diploma or degree certificate.
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="space-y-6">
-          <img src="/russia1.png" alt="" className="size- rounded-md" />
-          <img src="/russiatwo.png" alt="" className="size- rounded-md" />
+          <img
+            src="/admissionopen.png"
+            alt=""
+            className="size- rounded-md h-[30rem] w-full"
+          />
+          <img src="/travelNow.png" alt="" className="size- rounded-md" />
         </div>
       </div>
     </AppLayout>
