@@ -34,10 +34,10 @@ const StudyInChina = () => {
               Second Class Upper (2:1).
             </p>
           </div>
+          <img src="/travelNow.png" alt="" className="size- rounded-md" />
         </div>
         <div className="space-y-6">
           <img src="/studyAbroadII.png" alt="" className="size- rounded-md" />
-          <img src="/" alt="" className="size- rounded-md" />
         </div>
       </div>
     </AppLayout>
