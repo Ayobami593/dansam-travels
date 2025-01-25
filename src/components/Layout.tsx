@@ -117,7 +117,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
           />
         </Drawer>
 
-        <Content className="px-4 md:px-12 my-2 md:my-4 flex-1">
+        <Content className="px-4 md:px-0 md:w-[90%] mx-auto my-2 md:my-4 flex-1">
           {children}
         </Content>
         <a
@@ -129,7 +129,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
             className="text-green-500 fixed bottom-40 right-1"
           />
         </a>
-        <Footer className="" style={{ backgroundColor: color }}>
+        <Footer className="px-10" style={{ backgroundColor: color }}>
           <CustomFooter />
         </Footer>
       </div>

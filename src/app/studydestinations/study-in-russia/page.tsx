@@ -6,9 +6,9 @@ import AppLayout from "@/components/Layout";
 const StudyInRussia = () => {
   return (
     <AppLayout>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
-        <div className="">
-          <p>Study in Russia</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 py-4 font-suse">
+        <div className="space-y-3">
+          <p className="font-bold">Study in Russia</p>
           <div className="space-y-4">
             <p>
               Russia is a highly educated country, with a long academic
@@ -39,7 +39,58 @@ const StudyInRussia = () => {
               with preparing for your studies in Russia.
             </p>
           </div>
-          <ul className="list-decimal"></ul>
+          <ul className="list-disc px-10">
+            <li>Very high quality of education</li>
+            <li>Tuition is extremely inexpensive</li>
+            <li>Top rated universities that are professional and modern</li>
+            <li>Global degree recognition</li>
+            <li>Wide variety of courses</li>
+          </ul>
+          <div className="font-medium">
+            <p className="pb-4">Application | Processing Fee: ₦400,000</p>
+            <p className="pb-2">APPLICATION PROCEDURES FOR STUDY IN RUSSIA</p>
+            <div className="space-y-2">
+              <p>- REQUIRED DOCUMENTS</p>
+              <ul className="list-decimal px-10">
+                <li>Copy of completed Application for Admission Form.</li>
+                <li>
+                  Copy of Passport (only the page(s) that shows your photo,
+                  personal details and signature)
+                </li>
+                <li>
+                  Copy of Secondary and Senior Secondary High School Result or
+                  Certificates | WAEC | NECO
+                </li>
+                <li>
+                  Copy of Bachelor Degree Certificate and Mark Sheet |
+                  Transcripts (applicable only for postgraduate applicants e.g.
+                  MBA,MSC).
+                </li>
+                <li>Copy of Recent Passport Photograph</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <p>BASIC INFORMATION</p>
+              <ul className="list-decimal px-10">
+                <li>
+                  Half or full Tuition fee for first must be paid before arrival
+                  in Russia.
+                </li>
+                <li>Admission processing duration: 2-6 weeks</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <p>SCHOOL FEES</p>
+              <ul className="list-decimal px-10">
+                <li>
+                  Tuition Fee from $1500/year for Undergraduate (BSs.) | medical
+                  courses from $3000/per year
+                </li>
+                <li>Tuition Fee from $2000/year For Masters Degree (MSc.)</li>{" "}
+                <li>Hostel Accommodation from $500/year</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="space-y-6">
           <img src="/russia1.png" alt="" className="size- rounded-md" />
