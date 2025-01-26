@@ -79,9 +79,11 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         >
           <div className="flex justify-between items-center w-full">
             <Link href="/">
-              <div className="text-white font-bold cursor-pointer">
+              <img src="/companylogoWhite.png" alt="" className="size-14" />
+
+              {/* <div className="text-white font-bold cursor-pointer">
                 Dansam Travels and Educonsult
-              </div>
+              </div> */}
             </Link>
             <Button
               className="md:hidden text- bg-none"
@@ -129,7 +131,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
             className="text-green-500 fixed bottom-40 right-1"
           />
         </a>
-        <Footer className="px-10" style={{ backgroundColor: color }}>
+        <Footer className="px-2" style={{ backgroundColor: color }}>
           <CustomFooter />
         </Footer>
       </div>

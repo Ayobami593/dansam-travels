@@ -3,8 +3,8 @@ export const email = "dansamtravelseduconsult@gmail.com";
 export const phoneNumber = "+7 995 083-33-28";
 
 export interface Faqs {
-    question: string;
-    answer: string;
+  question: string;
+  answer: string;
 }
 
 export const faqs: Faqs[] = [
@@ -56,4 +56,10 @@ export const faqs: Faqs[] = [
     answer:
       "The cost of living is not high depending on the city and you around 300 dollars a month.",
   },
+];
+
+export const approvedVisas = [
+  { name: "Russian Study Visa", image: "/visas/firstVisa.jpg" },
+  { name: "Russian Study Visa", image: "/visas/secondVisa.jpg" },
+  { name: "Russian Study Visa", image: "/visas/thirdVisa.jpg" },
 ];
