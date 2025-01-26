@@ -113,13 +113,12 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         >
           <Menu
             mode="vertical"
-            defaultSelectedKeys={["1"]}
             items={items}
             onClick={() => setDrawerVisible(false)}
           />
         </Drawer>
 
-        <Content className="px-4 md:px-0 md:w-[90%] mx-auto my-2 md:my-4 flex-1">
+        <Content className="px-4 w-full md:px-0 md:w-[90%] mx-auto my-2 md:my-4 flex-1">
           {children}
         </Content>
         <a
