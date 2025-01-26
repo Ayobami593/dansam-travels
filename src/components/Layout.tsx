@@ -72,7 +72,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
   const menuTextColor = "#ffffff";
   return (
     <Layout>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen w-full">
         <Header
           className="sticky top-0 z-10 w-full flex items-center"
           style={{ backgroundColor: color, color: menuTextColor }}
