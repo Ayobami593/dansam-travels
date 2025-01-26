@@ -9,7 +9,11 @@ const Contactus = () => {
     <AppLayout>
       <div className="flex flex-col py-4 md:py-12 md:flex-row gap-4 md:gap-8">
         <div className="flex-1 space-y-3">
-          <img src="/studyAbroad.png" alt="" className="h-[21rem] w-full" />
+          <img
+            src="/studyAbroad.png"
+            alt="Study abroad"
+            className="h-[21rem] w-full"
+          />
           <div className="text-center">
             <p className="font-bold text-xl md:text-3xl">
               Our office locations

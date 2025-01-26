@@ -40,7 +40,7 @@ const VisaServices = () => {
         <div>
           <img
             src="/studyvisa.png"
-            alt=""
+            alt="Get a study visa"
             className="size- rounded-md h-[30rem] w-full"
           />
         </div>

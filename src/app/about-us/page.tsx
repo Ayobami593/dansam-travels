@@ -34,7 +34,12 @@ const Aboutus = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <div className="md:w-[30%] flex md:items-center">
-            <Image src="/expandhorizon.png" alt="" width={450} height={450} />
+            <Image
+              src="/expandhorizon.png"
+              alt="expanding horizon"
+              width={450}
+              height={450}
+            />
           </div>
           <div className="md:w-[70%]">
             <p className="text-center font-bold font-mulish text-xl md:text-3xl">

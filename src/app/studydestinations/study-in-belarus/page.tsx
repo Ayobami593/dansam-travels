@@ -72,16 +72,16 @@ const StudyInBelarus = () => {
                 <li>You must be at least 17 years old.</li>
                 <li>
                   You need to have a minimum of 5 credits in relevant subjects
-                  in your O'Level results (WAEC or NECO).
+                  in your O&apos;Level results (WAEC or NECO).
                 </li>
                 <li>
                   Since English is the language of instruction, you may need to
                   provide proof of English language proficiency, such as IELTS
-                  or TOEFL but as a Nigerian you don't need this.
+                  or TOEFL but as a Nigerian you don&apos;t need this.
                 </li>
                 <li>
-                  You'll need to provide a medical certificate showing you're
-                  fit to study.
+                  You&apos;ll need to provide a medical certificate showing
+                  you&apos;re fit to study.
                 </li>
                 <li>A police clearance certificate may be required.</li>
               </ul>
@@ -90,20 +90,20 @@ const StudyInBelarus = () => {
               <p className="uppercase">Documents required</p>
               <ul className="list-decimal px-10 text-justify">
                 <li>
-                  A valid international passport with at least 2 years'
+                  A valid international passport with at least 2 years&apos;
                   validity.
                 </li>
                 <li>A certified copy of your birth certificate.</li>
                 <li>
-                  Certified copies of your O'Level results (WAEC or NECO).
+                  Certified copies of your O&apos;Level results (WAEC or NECO).
                 </li>
                 <li>
-                  If you're applying for a postgraduate program, you'll need to
-                  provide your undergraduate transcript.
+                  If you&apos;re applying for a postgraduate program,
+                  you&apos;ll need to provide your undergraduate transcript.
                 </li>
                 <li>
-                  Diploma or Degree Certificate: If you're applying for a
-                  postgraduate program, you'll need to provide your
+                  Diploma or Degree Certificate: If you&apos;re applying for a
+                  postgraduate program, you&apos;ll need to provide your
                   undergraduate diploma or degree certificate.
                 </li>
               </ul>

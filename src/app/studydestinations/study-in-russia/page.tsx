@@ -17,7 +17,7 @@ const StudyInRussia = () => {
               economist, the likes of Yuri Gagarin: first human in space. Russia
               has more than 880 universities and the government is investing
               heavily in making improvements to the system. President Vladimir
-              Putin has spoken about an "educational revolution".
+              Putin has spoken about an &quot;educational revolution&quot;.
             </p>
             <p>
               Russia offers international students a variety of courses at both
@@ -93,8 +93,16 @@ const StudyInRussia = () => {
           </div>
         </div>
         <div className="space-y-6">
-          <img src="/russia1.png" alt="" className="size- rounded-md" />
-          <img src="/russiatwo.png" alt="" className="size- rounded-md" />
+          <img
+            src="/russia1.png"
+            alt="Russia study flier one"
+            className="size- rounded-md"
+          />
+          <img
+            src="/russiatwo.png"
+            alt="Russia study flier two"
+            className="size- rounded-md"
+          />
         </div>
       </div>
     </AppLayout>
