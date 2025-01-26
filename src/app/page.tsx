@@ -7,7 +7,8 @@ export default function Home() {
         <p className="text-center animate-pulse">Welcome</p>
         <p className="text-center animate-ping">We are Dansam</p>
         <p className="text-center animate-pulse">
-          We deal in education consulting and travel assistance
+          We deal in education consulting and travel assistance, your education
+          is our priority
         </p>
         <div></div>
         <div></div>
