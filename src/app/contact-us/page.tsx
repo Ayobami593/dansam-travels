@@ -1,6 +1,6 @@
 import React from "react";
 import { CgMailOpen } from "react-icons/cg";
-import { email, faqs, phoneNumber } from "@/utils";
+import { email, emailTwo, faqs, phoneNumber } from "@/utils";
 import FaqComponent from "@/components/Faqs";
 import AppLayout from "@/components/Layout";
 
@@ -41,6 +41,12 @@ const Contactus = () => {
               className="block text-[#235e5e] mt-2 hover:text-[#235e5e]"
             >
               dansamtravelseduconsult@gmail.com
+            </a>{" "}
+            <a
+              href={`mailto:${emailTwo}`}
+              className="block text-[#235e5e] mt-2 hover:text-[#235e5e]"
+            >
+              info@dansamtravels.com
             </a>
           </div>
           <div>
@@ -54,7 +60,7 @@ const Contactus = () => {
           </div>
         </div>
       </div>
-      <FaqComponent faqs={faqs} />
+      {/* <FaqComponent faqs={faqs} /> */}
     </AppLayout>
   );
 };

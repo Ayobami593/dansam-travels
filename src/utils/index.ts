@@ -1,5 +1,6 @@
 export const currentYear = new Date().getFullYear();
 export const email = "dansamtravelseduconsult@gmail.com";
+export const emailTwo = "info@dansamtravels.com";
 export const phoneNumber = "+7 995 083-33-28";
 
 export interface Faqs {

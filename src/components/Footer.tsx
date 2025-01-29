@@ -52,6 +52,11 @@ const CustomFooter = () => {
                 Study in Russia
               </Link>
             </li>
+            <li>
+              <Link className="hover:text-inherit" href="/faqs">
+                FAQs
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="space-y-4">
@@ -63,7 +68,11 @@ const CustomFooter = () => {
                 <strong>Head Office:</strong> Kursk Oblast, Russia
               </li>
               <li>
-                <a href={`tel:${phoneNumber}`} className="hover:text-inherit">
+                <a
+                  href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
+                  target="_blank"
+                  className="hover:text-inherit"
+                >
                   +7 995 083-33-28
                 </a>
               </li>

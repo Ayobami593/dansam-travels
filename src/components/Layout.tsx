@@ -36,25 +36,24 @@ const items = [
       },
     ],
   },
-  { key: "3", label: <Link href="/contact-us">Contact Us</Link> },
   {
-    key: "4",
+    key: "3",
     label: "Study Abroad",
     children: [
       {
-        key: "4-1",
+        key: "3-1",
         label: (
           <Link href="/studydestinations/study-in-russia">Study in Russia</Link>
         ),
       },
       {
-        key: "4-2",
+        key: "3-2",
         label: (
           <Link href="/studydestinations/study-in-china">Study in China</Link>
         ),
       },
       {
-        key: "4-3",
+        key: "3-3",
         label: (
           <Link href="/studydestinations/study-in-belarus">
             Study in Belarus
@@ -63,6 +62,7 @@ const items = [
       },
     ],
   },
+  { key: "4", label: <Link href="/contact-us">Contact Us</Link> },
   { key: "5", label: <Link href="/about-us">About Us</Link> },
 ];
 
@@ -77,7 +77,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
           className="sticky top-0 z-10 w-full flex items-center"
           style={{ backgroundColor: color, color: menuTextColor }}
         >
-          <div className="flex justify-between items-center w-full">
+          <div className="flex justify-between items-center w-full px-3">
             <Link href="/">
               <img src="/companylogoWhite.png" alt="" className="size-14" />
 
@@ -121,15 +121,48 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         <Content className="px-4 w-full md:px-0 md:w-[90%] mx-auto my-2 md:my-4 flex-1">
           {children}
         </Content>
-        <a
+        {/* <a
           href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
           target="_blank"
+          className="fixed bottom-40 right-1"
         >
-          <RiWhatsappFill
-            size={40}
-            className="text-green-500 fixed bottom-40 right-1"
-          />
-        </a>
+          <RiWhatsappFill size={40} className="text-green-500" />
+          <span className="rounded-full">We're here! Send us a message</span>
+        </a> */}
+        <div className="fixed bottom-40 right-1 flex items-center justify-center">
+          <div className="relative w-24 h-24">
+            {/* Circular Text */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <svg
+                viewBox="0 0 100 100"
+                width="100"
+                height="100"
+                className="transform rotate-0"
+              >
+                <path
+                  id="circle"
+                  d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
+                  fill="none"
+                />
+                <text className="text-sm font-bold fill-current text-green-600">
+                  <textPath href="#circle" startOffset="15%">
+                    We are here! Send us a message
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+
+            <div className="absolute inset-0 flex items-center justify-center">
+              <a
+                href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RiWhatsappFill size={40} className="text-green-500" />
+              </a>
+            </div>
+          </div>
+        </div>
         <Footer className="px-2" style={{ backgroundColor: color }}>
           <CustomFooter />
         </Footer>
