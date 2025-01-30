@@ -1,7 +1,6 @@
 import React from "react";
 import { CgMailOpen } from "react-icons/cg";
-import { email, emailTwo, faqs, phoneNumber } from "@/utils";
-import FaqComponent from "@/components/Faqs";
+import { email, emailTwo, phoneNumber } from "@/utils";
 import AppLayout from "@/components/Layout";
 
 const Contactus = () => {
@@ -60,7 +59,6 @@ const Contactus = () => {
           </div>
         </div>
       </div>
-      {/* <FaqComponent faqs={faqs} /> */}
     </AppLayout>
   );
 };

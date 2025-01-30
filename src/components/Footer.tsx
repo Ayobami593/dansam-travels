@@ -1,4 +1,4 @@
-import { currentYear, email, phoneNumber } from "@/utils";
+import { currentYear, email } from "@/utils";
 import Link from "next/link";
 import React from "react";
 import { FaLocationDot, FaTiktok } from "react-icons/fa6";
