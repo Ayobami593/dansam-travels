@@ -37,11 +37,11 @@ const Aboutus = () => {
             <p className="text-center font-bold font-mulish text-xl md:text-3xl">
               About the Founder/CEO
             </p>
-            <div className="flex flex-col md:flex-row gap-6">
-              <div className="text-justify flex-1">
+            <div className="flex flex-col items-center justify-center md:flex-row gap-6 mb-6 md:mb-0">
+              <div className="text-justify w-full md:w-[70%]">
                 <p className="font-bold font-mulish text-lg md:text-2xl">
                   Personal Profile
-                </p>{" "}
+                </p>
                 <p>
                   Ayobami Samuel is a transformative leader, seamlessly merging
                   the worlds of travel and education to foster global
@@ -64,30 +64,42 @@ const Aboutus = () => {
                   travel and education, one transformative experience at a time.
                 </p>
               </div>
-              <div className="flex-1">
+              <div className="w-full px-6 md:px-0 md:w-[30%]">
                 <Image
-                  width={250}
+                  width={350}
                   height={250}
                   alt=""
                   src="/ayobami/ceo1.jpg"
+                  className="rounded-md"
                 />
               </div>
             </div>
-            <div className="text-justify">
-              <p className="font-bold font-mulish text-lg md:text-2xl">
-                Early Life
-              </p>
-              <p>
-                Ayobami Samuel, born in Ibadan, Oyo State, Nigeria, to Nigerian
-                parents, is the second child in a family of four. He attended
-                primary and secondary school in Oyo State before pursuing higher
-                education at Financial University under the Government of the
-                Russian Federation, where he is currently studying Business
-                Analysis, Taxes and Audits. His multicultural upbringing and
-                international academic background have played a pivotal role in
-                shaping his leadership style and innovative vision for travel
-                and education.
-              </p>
+            <div className="flex flex-col items-center justify-center md:flex-row gap-6">
+              <div className="w-full px-6 md:px-0 md:w-[30%]">
+                <Image
+                  width={350}
+                  height={250}
+                  alt=""
+                  src="/ayobami/ceo2.jpg"
+                  className="rounded-md"
+                />
+              </div>
+              <div className="text-justify w-full md:w-[70%]">
+                <p className="font-bold font-mulish text-lg md:text-2xl">
+                  Early Life
+                </p>
+                <p>
+                  Ayobami Samuel, born in Ibadan, Oyo State, Nigeria, to
+                  Nigerian parents, is the second child in a family of four. He
+                  attended primary and secondary school in Oyo State before
+                  pursuing higher education at Financial University under the
+                  Government of the Russian Federation, where he is currently
+                  studying Business Analysis, Taxes and Audits. His
+                  multicultural upbringing and international academic background
+                  have played a pivotal role in shaping his leadership style and
+                  innovative vision for travel and education.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        about: "url('/studyAbroad.png')",
+        homeHero: "url('/bookflight.png')",
       },
     },
   },

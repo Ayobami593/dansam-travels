@@ -64,6 +64,7 @@ const items = [
   },
   { key: "4", label: <Link href="/contact-us">Contact Us</Link> },
   { key: "5", label: <Link href="/about-us">About Us</Link> },
+  { key: "6", label: <Link href="/faqs">FAQs</Link> },
 ];
 
 const AppLayout = ({ children }: { children: ReactNode }) => {
@@ -137,16 +138,16 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
                 viewBox="0 0 100 100"
                 width="100"
                 height="100"
-                className="transform rotate-0"
+                className="transform -rotate-12"
               >
                 <path
                   id="circle"
                   d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"
                   fill="none"
                 />
-                <text className="text-sm font-bold fill-current text-green-600">
+                <text className="text-lg font-bold fill-current text-green-600">
                   <textPath href="#circle" startOffset="15%">
-                    We are here! Send us a message
+                    We are here!
                   </textPath>
                 </text>
               </svg>

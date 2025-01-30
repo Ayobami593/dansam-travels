@@ -64,3 +64,48 @@ export const approvedVisas = [
   { name: "Russian Study Visa", image: "/visas/secondVisa.jpg" },
   { name: "Russian Study Visa", image: "/visas/thirdVisa.jpg" },
 ];
+
+export const services = [
+  {
+    images: "/visaAssistance.png",
+    title: "Visa Assistance",
+    description:
+      "Dansam Travels & Educonsult provides visa assistance, visa support and documentations, we also help our clients to prepare for visa interviews and provide",
+    link: "/services/visa-assistance",
+  },
+  {
+    images: "/visas/firstVisa.jpg",
+    title: "Approved Visa",
+    description:
+      "See some of our already processed and approved visa applications",
+    link: "/services/approved-visas",
+  },
+  {
+    images: "/bookflight.png",
+    title: "Flight Booking",
+    description:
+      " Dansam Travels & Educonsult can assist you in booking your local and international flight",
+    link: "/services/flight-booking",
+  },
+  {
+    images: "/russia1.png",
+    title: "Study in Russia",
+    description:
+      "Russia is a highly educated country, with a long academic tradition. Its universities have spawned many great minds, among them ",
+    link: "/studydestinations/study-in-russia",
+  },
+  {
+    images: "/countries/Belarus .jpg",
+    title: "Study in Belarus",
+    description:
+      "Belarus has a well-structured education system, with a strong emphasis on higher education. The country boasts several universities",
+    link: "/studydestinations/study-in-belarus",
+  },
+  {
+    images: "/countries/China .jpg",
+    title: "Study in China",
+    description:
+      "There are many programs in the CHINA and each have their own requirements for admission. Many schools that offer undergraduate degrees ",
+    link: "/studydestinations/study-in-china",
+  },
+];
