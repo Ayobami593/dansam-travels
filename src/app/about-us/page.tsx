@@ -33,43 +33,45 @@ const Aboutus = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="md:w-[30%] flex md:items-center">
-            <Image
-              src="/expandhorizon.png"
-              alt="expanding horizon"
-              width={450}
-              height={450}
-            />
-          </div>
-          <div className="md:w-[70%]">
+          <div className="">
             <p className="text-center font-bold font-mulish text-xl md:text-3xl">
               About the Founder/CEO
             </p>
-            <div className="text-justify">
-              <p className="font-bold font-mulish text-lg md:text-2xl">
-                Personal Profile
-              </p>{" "}
-              <p>
-                Ayobami Samuel is a transformative leader, seamlessly merging
-                the worlds of travel and education to foster global
-                understanding and growth. As the founder of DanSam Travels &
-                Educonsult, Samuel crafts immersive travel experiences that go
-                beyond sightseeing, bridging cultural divides and inspiring new
-                perspectives in travelers. He believes that firsthand cultural
-                exchange is a powerful catalyst for personal and intellectual
-                development. As an education consultant, Samuel empowers both
-                educators and learners. He works with educational institutions
-                to develop innovative programs that promote academic excellence
-                and equip students with the skills they need to thrive in a
-                globalized world. He also provides personalized guidance to
-                students, helping them navigate the complexities of
-                international education and achieve their academic aspirations.
-                With a unique blend of industry expertise, a deep understanding
-                of cultural dynamics, and a genuine passion for lifelong
-                learning, Ayobami Samuel continues to innovate and inspire,
-                shaping the future of travel and education, one transformative
-                experience at a time.
-              </p>
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="text-justify flex-1">
+                <p className="font-bold font-mulish text-lg md:text-2xl">
+                  Personal Profile
+                </p>{" "}
+                <p>
+                  Ayobami Samuel is a transformative leader, seamlessly merging
+                  the worlds of travel and education to foster global
+                  understanding and growth. As the founder of DanSam Travels &
+                  Educonsult, Samuel crafts immersive travel experiences that go
+                  beyond sightseeing, bridging cultural divides and inspiring
+                  new perspectives in travelers. He believes that firsthand
+                  cultural exchange is a powerful catalyst for personal and
+                  intellectual development. As an education consultant, Samuel
+                  empowers both educators and learners. He works with
+                  educational institutions to develop innovative programs that
+                  promote academic excellence and equip students with the skills
+                  they need to thrive in a globalized world. He also provides
+                  personalized guidance to students, helping them navigate the
+                  complexities of international education and achieve their
+                  academic aspirations. With a unique blend of industry
+                  expertise, a deep understanding of cultural dynamics, and a
+                  genuine passion for lifelong learning, Ayobami Samuel
+                  continues to innovate and inspire, shaping the future of
+                  travel and education, one transformative experience at a time.
+                </p>
+              </div>
+              <div className="flex-1">
+                <Image
+                  width={250}
+                  height={250}
+                  alt=""
+                  src="/ayobami/ceo1.jpg"
+                />
+              </div>
             </div>
             <div className="text-justify">
               <p className="font-bold font-mulish text-lg md:text-2xl">

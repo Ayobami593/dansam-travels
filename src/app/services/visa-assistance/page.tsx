@@ -1,7 +1,18 @@
+"use client";
+
 import AppLayout from "@/components/Layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const VisaServices = () => {
+  const [imageToShow, setImageToShow] = useState(false);
+
+  useEffect(() => {
+    const changeInterval = setInterval(() => {
+      setImageToShow((prev) => !prev);
+    }, 6000);
+
+    return () => clearInterval(changeInterval);
+  }, []);
   return (
     <AppLayout>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
@@ -37,12 +48,20 @@ const VisaServices = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <img
-            src="/studyvisa.png"
-            alt="Get a study visa"
-            className="size- rounded-md h-[30rem] w-full"
-          />
+        <div className="transition-opacity duration-500 ease-in">
+          {imageToShow ? (
+            <img
+              src="/studyvisa.png"
+              alt="Get a study visa"
+              className="size- rounded-md h-[30rem] w-full"
+            />
+          ) : (
+            <img
+              src="/visaAssistance.png"
+              alt="Get a study visa"
+              className="size- rounded-md h-[30rem] w-full"
+            />
+          )}
         </div>
       </div>
     </AppLayout>
