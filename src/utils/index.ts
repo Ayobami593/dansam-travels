@@ -109,3 +109,38 @@ export const services = [
     link: "/studydestinations/study-in-china",
   },
 ];
+
+export const whyChooseUs = [
+  {
+    title: "Expert Knowledge",
+    description:
+      "Our team of experienced travel consultants has extensive knowledge of destinations worldwide, ensuring that you receive expert advice and guidance throughout your journey.",
+  },
+  {
+    title: "Customized Itineraries",
+    description:
+      "We craft tailored travel plans that cater to your unique preferences, interests, and budget, guaranteeing an unforgettable study experience.",
+  },
+  {
+    title: "Unbeatable Prices",
+    description:
+      "We strive to offer competitive pricing without compromising on quality, ensuring that you receive the best value for your money.",
+  },
+  {
+    title: "Exceptional Customer Service",
+    description:
+      "Our dedicated team is available 24/7 to provide assistance, answer questions, and resolve any concerns you may have.",
+  },
+  {
+    title: "In-Depth Destination Knowledge",
+    description:
+      "Our team has extensive knowledge of various destinations, enabling us to provide insider tips, recommendations, and insights that enhance your travel experience.",
+  },
+  {
+    title: "Flexibility and Adaptability",
+    description:
+      "We understand that travel plans can change unexpectedly. Our team is flexible and adaptable, ensuring that we can accommodate any changes or requests you may have.",
+  },
+];
+
+export const destinations = [];
