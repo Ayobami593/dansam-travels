@@ -143,4 +143,20 @@ export const whyChooseUs = [
   },
 ];
 
-export const destinations = [];
+export const destinations = [
+  {
+    images: "/countries/Belarus .jpg",
+    title: "Belarus",
+    link: "/studydestinations/study-in-belarus",
+  },
+  {
+    images: "/countries/Moscow, Russia .jpg",
+    title: "Russia",
+    link: "/studydestinations/study-in-russia",
+  },
+  {
+    images: "/countries/China .jpg",
+    title: "China",
+    link: "/studydestinations/study-in-china",
+  },
+];

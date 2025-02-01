@@ -15,7 +15,7 @@ const CustomerReview = () => {
     },
   ];
   return (
-    <Carousel autoplay>
+    <Carousel autoplay dots={true} autoplaySpeed={3000} effect="fade">
       {customerReview.map((review, index) => (
         <div key={index} className="font-suse">
           <Card
@@ -24,6 +24,8 @@ const CustomerReview = () => {
               textAlign: "center",
               padding: "20px",
               borderRadius: "0.5rem",
+              background: "#235e5e",
+              color: "white",
             }}
           >
             <p>{review.comment}</p>
