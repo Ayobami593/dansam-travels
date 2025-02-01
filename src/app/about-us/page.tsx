@@ -69,7 +69,7 @@ const Aboutus = () => {
                   width={350}
                   height={250}
                   alt=""
-                  src="/ayobami/ceo1.jpg"
+                  src="/ayobami/ceo3.jpg"
                   className="rounded-md"
                 />
               </div>
@@ -80,7 +80,7 @@ const Aboutus = () => {
                   width={350}
                   height={250}
                   alt=""
-                  src="/ayobami/ceo2.jpg"
+                  src="/ayobami/ceo4.jpg"
                   className="rounded-md"
                 />
               </div>
