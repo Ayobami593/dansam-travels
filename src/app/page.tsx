@@ -9,10 +9,9 @@ export default function Home() {
     <Layout>
       <div className="flex flex-col justify-center space-y-5 font-suse">
         <div className="font-medium text-lg md:text-2xl bg-homeHero text-white py-20 md:py-16 space-y-2 rounded-md">
-          <p className="text-center ">Welcome</p>
-          <p className="text-center ">We are Dansam</p>
-          <p className="text-center">
-            We deal in education consulting and travel assistance
+          <p className="text-center ">Welcome to Dansam Travels & Educonsult</p>
+          <p className="text-center ">
+            We are here to make your study abroad dream come true
           </p>
         </div>
         <div className="space-y-4">

@@ -6,6 +6,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import CustomFooter from "./Footer";
 import { RiWhatsappFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const { Header, Content, Footer } = Layout;
 
@@ -80,11 +81,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         >
           <div className="flex justify-between items-center w-full px-3">
             <Link href="/">
-              <img src="/companylogoWhite.png" alt="" className="size-14" />
-
-              {/* <div className="text-white font-bold cursor-pointer">
-                Dansam Travels and Educonsult
-              </div> */}
+              <img src="/companylogoDark.jpg" alt="" className="size-14" />
             </Link>
             <Button
               className="md:hidden text- bg-none"
@@ -122,17 +119,23 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         <Content className="px-4 w-full md:px-0 md:w-[90%] mx-auto my-2 md:my-4 flex-1">
           {children}
         </Content>
-        {/* <a
+        <a
           href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
           target="_blank"
-          className="fixed bottom-40 right-1"
+          className="fixed bottom-24 right-1"
         >
-          <RiWhatsappFill size={40} className="text-green-500" />
-          <span className="rounded-full">We're here! Send us a message</span>
-        </a> */}
-        <div className="fixed bottom-40 right-1 flex items-center justify-center">
+          <RiWhatsappFill size={50} className="text-green-500" />
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=+79950833328&&text=Welcome%20to%20Dansam%20travels%20and%Educonsult!%20How%20can%20we%20help%20you?"
+          target="_blank"
+          className="fixed bottom-10 right-1 flex gap-2 items-center bg-[#183f3f] px-6 py-3 rounded-md"
+        >
+          <IoLogoWhatsapp size={24} className="text-white" />
+          <span className="rounded-full text-white">Chat with us</span>
+        </a>
+        {/* <div className="fixed bottom-40 right-1 flex items-center justify-center">
           <div className="relative w-24 h-24">
-            {/* Circular Text */}
             <div className="absolute inset-0 flex items-center justify-center">
               <svg
                 viewBox="0 0 100 100"
@@ -163,7 +166,7 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <Footer className="px-2" style={{ backgroundColor: color }}>
           <CustomFooter />
         </Footer>

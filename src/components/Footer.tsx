@@ -10,7 +10,7 @@ const CustomFooter = () => {
     <footer className="text-white font-suse space-y-4">
       <div className="flex flex-col md:flex-row md:justify-between justify- px-8 md:px-16 gap-4">
         <div className="space-y-2">
-          <img src="/companylogoWhite.png" alt="" className="size-20" />
+          <img src="/companylogoDark.jpg" alt="" className="size-20" />
           <div className="space-y-1 text-justify">
             <p>About Dansam Travels and Educonsult</p>
             <p>
