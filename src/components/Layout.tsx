@@ -81,7 +81,11 @@ const AppLayout = ({ children }: { children: ReactNode }) => {
         >
           <div className="flex justify-between items-center w-full px-3">
             <Link href="/">
-              <img src="/companylogoDark.jpg" alt="" className="size-14" />
+              <img
+                src="/companylogoDark.jpg"
+                alt=""
+                className="size-14 rounded-full"
+              />
             </Link>
             <Button
               className="md:hidden text- bg-none"

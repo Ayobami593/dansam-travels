@@ -2,8 +2,15 @@ import Link from "next/link";
 import React from "react";
 import { FaAngleRight } from "react-icons/fa";
 
-const ServiceCard = ({ images, title, description, link }) => {
-  const truncateText = (text, wordLimit = 60) => {
+interface ServiceCards {
+  images: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const ServiceCard = ({ images, title, description, link }: ServiceCards) => {
+  const truncateText = (text: string, wordLimit = 60) => {
     if (!text) return "";
     const words = text.split(" ");
     return words.length > wordLimit

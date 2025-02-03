@@ -8,7 +8,7 @@ const StudyInRussia = () => {
     <AppLayout>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4 py-4 font-suse">
         <div className="space-y-3">
-          <p className="font-bold">Study in Russia</p>
+          <h1 className="text-base font-bold">Study in Russia</h1>
           <div className="space-y-4">
             <p>
               Russia is a highly educated country, with a long academic
