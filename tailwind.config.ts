@@ -7,10 +7,13 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      mulish: ["Mulish", "sans-serif"],
+      suse: ["SUSE", "sans-serif"],
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        homeHero: "url('/bookflight.png')",
       },
     },
   },

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +20,46 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 767px) {
+  .ant-menu .ant-menu-sub {
+    position: relative;
+    top: 2.2rem;
+    left: 15rem;
+    color: #429a98;
+  }
+}
+
+.ant-menu-horizontal > .ant-menu-item {
+  color: white !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid transparent !important;
+  transition: color 0.3s, background-color 0.3s, border-bottom 0.3s;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  color: #ffffff !important;
+  border-bottom: none !important;
+}
+
+.ant-menu-horizontal .ant-menu-submenu-title {
+  color: white !important;
+  transition: color 0.3s;
+}
+
+.ant-menu-horizontal > .ant-menu-submenu-title:hover {
+  color: #a8dadc !important;
+  border-bottom: none !important;
+}
+
+.ant-menu-submenu .ant-menu-item {
+  color: #429a98 !important;
+  background-color: white !important;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.ant-menu-submenu .ant-menu-item:hover {
+  color: #235e5e !important;
+  background-color: #f0f0f0 !important;
 }
