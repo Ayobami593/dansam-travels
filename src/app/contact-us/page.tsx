@@ -43,7 +43,7 @@ const Contactus = () => {
             </a>{" "}
             <a
               href={`mailto:${emailTwo}`}
-              className="block text-[#0074D9] mt-2 hover:text-[#0074D9]"
+              className="block text-primary mt-2 hover:text-[#0074D9]"
             >
               info@dansamtravels.com
             </a>
@@ -52,7 +52,7 @@ const Contactus = () => {
             <p> Give us a call or message us</p>
             <a
               href={`tel:${phoneNumber}`}
-              className="block text-[#0074D9] mt-2 hover:text-[#0074D9]"
+              className="block text-primary mt-2 hover:text-[#0074D9]"
             >
               +7 995 083-33-28
             </a>
