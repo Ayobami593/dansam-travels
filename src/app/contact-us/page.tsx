@@ -18,7 +18,7 @@ const Contactus = () => {
               Our office locations
             </p>
             <p>
-              <strong>Head Office:</strong> Kursk Oblast, Russia
+              <strong>Head Office:</strong> Russia
             </p>
             <p>
               <strong>Branch Office:</strong> Ibadan, Oyo state, Nigeria. Office
@@ -37,13 +37,13 @@ const Contactus = () => {
             </p>
             <a
               href={`mailto:${email}`}
-              className="block text-[#235e5e] mt-2 hover:text-[#235e5e]"
+              className="block text-[#0074D9] mt-2 hover:text-[#0074D9]"
             >
               dansamtravelseduconsult@gmail.com
             </a>{" "}
             <a
               href={`mailto:${emailTwo}`}
-              className="block text-[#235e5e] mt-2 hover:text-[#235e5e]"
+              className="block text-[#0074D9] mt-2 hover:text-[#0074D9]"
             >
               info@dansamtravels.com
             </a>
@@ -52,7 +52,7 @@ const Contactus = () => {
             <p> Give us a call or message us</p>
             <a
               href={`tel:${phoneNumber}`}
-              className="block text-[#235e5e] mt-2 hover:text-[#235e5e]"
+              className="block text-[#0074D9] mt-2 hover:text-[#0074D9]"
             >
               +7 995 083-33-28
             </a>

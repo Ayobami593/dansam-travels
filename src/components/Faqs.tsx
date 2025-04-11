@@ -18,7 +18,7 @@ interface FaqComponentProps {
 const FaqItem = ({ question, answer, isOpen, onToggle }: FaqItems) => (
   <div className="faq border-b border-gray-100 mb-[2px]">
     <div
-      className="faq-title cursor-pointer p-4 bg-[#389494] text-white flex gap-2 items-center"
+      className="faq-title cursor-pointer p-4 bg-primary text-white flex gap-2 items-center"
       onClick={onToggle}
     >
       <span>{isOpen ? <IoMdArrowDropup /> : <IoMdArrowDropright />}</span>{" "}

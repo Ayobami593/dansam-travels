@@ -49,17 +49,25 @@ body {
 }
 
 .ant-menu-horizontal > .ant-menu-submenu-title:hover {
-  color: #a8dadc !important;
+  color: #3292e6 !important;
   border-bottom: none !important;
 }
 
 .ant-menu-submenu .ant-menu-item {
-  color: #429a98 !important;
+  color: #0884f0 !important;
   background-color: white !important;
   transition: color 0.3s, background-color 0.3s;
 }
 
 .ant-menu-submenu .ant-menu-item:hover {
-  color: #235e5e !important;
+  color: #0074d9 !important;
   background-color: #f0f0f0 !important;
+}
+
+.text-primary{
+  color: #0074D9;
+}
+
+.bg-primary{
+  background: #0074D9;
 }

@@ -31,7 +31,7 @@ const ServiceCard = ({ images, title, description, link }: ServiceCards) => {
         <p className="text-sm text-center">{truncateText(description, 12)}</p>
         <Link
           href={link}
-          className="inline-flex items-center p-2 rounded-md gap-1 bg-[#235e5e] text-white hover:border hover:border-[#235e5e] hover:bg-white hover:text-[#235e5e]"
+          className="inline-flex items-center p-2 rounded-md gap-1 bg-primary text-white hover:border hover:border-[#0074D9] hover:bg-white hover:text-[#0074D9]"
         >
           Learn More <FaAngleRight className="mt-1" />
         </Link>

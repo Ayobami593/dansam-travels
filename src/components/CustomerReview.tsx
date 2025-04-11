@@ -24,7 +24,7 @@ const CustomerReview = () => {
               textAlign: "center",
               padding: "20px",
               borderRadius: "0.5rem",
-              background: "#235e5e",
+              background: "#0074D9",
               color: "white",
             }}
           >
